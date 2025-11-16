@@ -6,6 +6,32 @@
 }
 
 @theme inline {
+  /* ROSA */
+  --color-poramor-rose-soft: #ffc2c2;
+  --color-poramor-rose: #ff9696;
+  --color-poramor-rose-dark: #ff6a6a;
+
+  /* DURAZNO */
+  --color-poramor-peach-soft: #ffd9c2;
+  --color-poramor-peach: #ffb27a;
+  --color-poramor-peach-dark: #ff9550;
+
+  /* AMARILLO SUAVE */
+  --color-poramor-sun-soft: #fff3c2;
+  --color-poramor-sun: #ffd85c;
+  --color-poramor-sun-dark: #f6c12a;
+
+  /* MENTA / AQUA */
+  --color-poramor-mint-soft: #caf5f7;
+  --color-poramor-mint: #8fe1e7;
+  --color-poramor-mint-dark: #5fc3cc;
+
+  /* CIELO */
+  --color-poramor-sky-soft: #c2e9ff;
+  --color-poramor-sky: #7ec4ff;
+  --color-poramor-sky-dark: #4d9dff;
+
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -17,6 +43,9 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
