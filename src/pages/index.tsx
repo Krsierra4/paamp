@@ -93,7 +93,7 @@ export default function IndexPage() {
                     clipRule="evenodd"
                   />
                 ) : (
-                  <path d="M4 6h16M4 12h16M4 18h16" />
+                  <path d="M4 6h16v2H4zM4 11h16v2H4zM4 16h16v2H4z" />
                 )}
               </svg>
             </button>
