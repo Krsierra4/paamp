@@ -199,7 +199,7 @@ export default function IndexPage() {
                 respeto.
               </p>
 
-              <div className="overflow-hidden rounded-xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-teal-50 p-6 shadow">
+              <div className="overflow-hidden rounded-xl border border-emerald-200 bg-linear-to-br from-emerald-50 to-teal-50 p-6 shadow">
                 <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
                   Un puente entre nuestras raíces y nuestro presente
                 </p>
