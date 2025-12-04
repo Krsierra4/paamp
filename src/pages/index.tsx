@@ -193,7 +193,7 @@ export default function IndexPage() {
                 familias de la comunidad.
               </p>
               <p className="text-slate-700">
-                Con el apoyo de amistades y aliados, año con año organizamos una
+                Con el apoyo de familia, amistades y aliados, año con año organizamos una
                 jornada solidaria que reúne juegos, regalos y alimentos. Tu
                 ayuda hace posible que lleguemos a más hogares con cariño y
                 respeto.
@@ -312,17 +312,16 @@ export default function IndexPage() {
                     <li>Juguetes nuevos o en buen estado</li>
                     <li>Refacciones y bebidas</li>
                     <li>Útiles y materiales de arte</li>
-                    <li>Apoyo a gasolina, parqueo y materiales</li>
                   </ul>
                 </div>
-                <div className="mt-6">
+                {/* <div className="mt-6">
                   <button
                     onClick={() => scrollTo("contacto")}
                     className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm hover:border-slate-400"
                   >
                     Ver datos para donar
                   </button>
-                </div>
+                </div> */}
               </div>
 
               <div className="flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
@@ -341,14 +340,14 @@ export default function IndexPage() {
                     <li>Logística y seguridad</li>
                   </ul>
                 </div>
-                <div className="mt-6">
+                {/* <div className="mt-6">
                   <button
                     onClick={() => scrollTo("contacto")}
                     className="rounded-full bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-emerald-700"
                   >
                     Quiero ser voluntario
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -366,15 +365,15 @@ export default function IndexPage() {
               </p>
             </div>
 
-            <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
                 <p className="text-sm font-semibold text-slate-900">WhatsApp</p>
-                <p className="mt-1 text-slate-700">+502 0000 0000</p>
+                <p className="mt-1 text-slate-700">+502 4149 3600</p>
                 <span className="mt-2 inline-block cursor-pointer text-sm font-medium text-teal-700 underline-offset-4 hover:underline">
                   Enviar mensaje
                 </span>
               </div>
-              <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+              {/* <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
                 <p className="text-sm font-semibold text-slate-900">Correo</p>
                 <a
                   href="mailto:donaciones@chinautla.org"
@@ -388,13 +387,25 @@ export default function IndexPage() {
                 >
                   Escribir correo
                 </a>
-              </div>
+              </div> */}
               <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
                 <p className="text-sm font-semibold text-slate-900">
                   Instagram
                 </p>
-                <p className="mt-1 text-slate-700">@tu_cuenta_chinautla</p>
-                <span className="mt-2 inline-block cursor-pointer text-sm font-medium text-teal-700 underline-offset-4 hover:underline">
+                <p className="mt-1 text-slate-700">@por.amor.a.mi.pueblo</p>
+                <span
+                  onClick={() => {
+                    const appLink = 'instagram://user?username=por.amor.a.mi.pueblo'
+                    const webLink = 'https://www.instagram.com/por.amor.a.mi.pueblo'
+
+                    window.location.href = appLink
+
+                    setTimeout(() => {
+                      window.location.href = webLink
+                    }, 800)
+                  }}
+                  className="mt-2 inline-block cursor-pointer text-sm font-medium text-teal-700 underline-offset-4 hover:underline"
+                >
                   Ver perfil
                 </span>
               </div>
