@@ -369,7 +369,21 @@ export default function IndexPage() {
               <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
                 <p className="text-sm font-semibold text-slate-900">WhatsApp</p>
                 <p className="mt-1 text-slate-700">+502 4149 3600</p>
-                <span className="mt-2 inline-block cursor-pointer text-sm font-medium text-teal-700 underline-offset-4 hover:underline">
+                <span
+                  onClick={() => {
+                    const phone = '50241493600'
+                    const message = encodeURIComponent('Hola, me gustaría hacer una donación ❤️😊')
+                    const appLink = `whatsapp://send?phone=${phone}&text=${message}`
+                    const webLink = `https://wa.me/${phone}?text=${message}`
+
+                    window.location.href = appLink
+
+                    setTimeout(() => {
+                      window.location.href = webLink
+                    }, 800)
+                  }}
+                  className="mt-2 inline-block cursor-pointer text-sm font-medium text-teal-700 underline-offset-4 hover:underline"
+                >
                   Enviar mensaje
                 </span>
               </div>
